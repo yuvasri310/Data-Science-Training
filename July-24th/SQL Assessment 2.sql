@@ -10,13 +10,13 @@ traveler_name varchar(50),start_date date,end_date date,budget int,
 foreign key(destination_id) references destinations(destination_id));
 
 insert into destinations values
-(1,'Goa','India','beach',2500),
+(1,'pyramid','Egypt','Historical',3200),
 (2,'TamilNadu','India','Historical',1800),
 (3,'Paris','France','Historical',4000),
 (4,'Bali','Indonesia','Beach',2700),
 (5,'Zurich','Switzerland','Nature',5000),
 (6,'Queenstown','New Zealand','Adventure',4500),
-(7,'harcini','Egypt','Historical',3200);
+(7,'Goa','India','beach',2500);
 
 
 insert into trips values
