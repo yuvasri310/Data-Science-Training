@@ -1,3 +1,8 @@
+use ("storeDB")
+
+db.createCollection("products")
+db.createCollections("orders")
+
 db.products.insertMany([
   {
     product_id: 1001,
