@@ -34,6 +34,7 @@ select * from exercises where category="cardio";
 -- 2. Show workouts done in the month of March 2025.
 select * from workoutlog where date between '2025-03-01' and '2025-03-31';
 select * from workoutlog where month(date)=3 and year(date)=2025;
+
 -- 3. Calculate total calories burned per workout (duration × calories_burn_per_min).
 select log_id,workoutlog.exercise_id,duration_min,duration_min*calories_burn_per_min as total_calories
 from workoutlog join exercises on workoutlog.exercise_id=exercises.exercise_id;
