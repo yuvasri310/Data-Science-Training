@@ -22,12 +22,10 @@ class BankAccount:
     def __init__(self, holder_name, balance):
         self.holder_name = holder_name
         self.balance = balance
-
-    def deposit(self, amount):
+   def deposit(self, amount):
         self.balance += amount
         print(f"{amount} deposited. New balance: {self.balance}")
-
-    def withdraw(self, amount):
+   def withdraw(self, amount):
         if amount > self.balance:
             raise ValueError("Insufficient balance")
         self.balance -= amount
