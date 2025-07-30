@@ -1,0 +1,22 @@
+item_id,item_name,stock_level,reorder_level,need_restock
+I001,Steel Rods,35.0,40.0,1
+I002,Copper Wires,50.0,30.0,0
+I003,Plastic Sheets,20.0,25.0,1
+I004,Nuts and Bolts,15.0,20.0,1
+I005,Aluminum Panels,60.0,45.0,0
+I006,Batteries,10.0,15.0,1
+I007,LED Displays,25.0,30.0,1
+I008,Screws,40.0,35.0,0
+I009,Packaging Boxes,22.0,30.0,1
+I010,Cables,33.0,20.0,0
+I011,Fuse Units,14.0,20.0,1
+I012,Switches,28.0,25.0,0
+I013,Insulation Tape,36.0,30.0,0
+I014,PVC Pipes,19.0,25.0,1
+I015,Metal Plates,29.0,30.0,1
+I016,Connectors,12.0,15.0,1
+I017,Transformers,8.0,10.0,1
+I018,Relays,17.0,18.0,1
+I019,Printed Circuit Boards,41.0,35.0,0
+I020,Resistors,23.0,30.0,1
+ ,,,,0
