@@ -1,0 +1,2 @@
+OrderID,OrderDate,Customer,Segment,Region,Product,Category,SubCategory,Quantity,UnitPrice,Discount,Profit
+CA-1005,2023-02-05,Divya,Consumer,South,Phone,Technology,Phones,2,20000,0.0,3000
