@@ -1,0 +1,21 @@
+order_id,customer_id,order_date,delivery_date,status_description,delay_days,delayed
+1,6,2025-07-19,2025-07-23,Courier not assigned,7,1
+2,4,2025-07-18,2025-07-24,Wrong address,6,1
+3,7,2025-07-20,2025-07-23,On time,7,1
+4,1,2025-07-19,2025-07-28,Wrong address,2,1
+5,7,2025-07-12,2025-07-18,Delayed due to rain,12,1
+6,1,2025-07-13,2025-07-17,Wrong address,13,1
+7,3,2025-07-12,2025-07-17,Courier not assigned,13,1
+8,9,2025-07-11,2025-07-15,Delayed due to rain,15,1
+9,4,2025-07-16,2025-07-24,Delayed due to rain,6,1
+10,10,2025-07-14,2025-07-22,Packaging delay,8,1
+11,2,2025-07-19,2025-07-28,Wrong address,2,1
+12,9,2025-07-12,2025-07-19,Vehicle breakdown,11,1
+13,4,2025-07-20,2025-07-26,Packaging delay,4,1
+14,10,2025-07-17,2025-07-21,Packaging delay,9,1
+15,3,2025-07-19,2025-07-28,Logistics issue,2,1
+16,9,2025-07-18,2025-07-26,Courier not assigned,4,1
+17,8,2025-07-14,2025-07-17,On time,13,1
+18,3,2025-07-13,2025-07-16,On time,14,1
+19,10,2025-07-15,2025-07-22,Delayed due to rain,8,1
+20,10,2025-07-15,2025-07-22,Logistics issue,8,1

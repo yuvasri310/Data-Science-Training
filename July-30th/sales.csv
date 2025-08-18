@@ -1,0 +1,9 @@
+OrderID,Product,Category,Quantity,UnitPrice,Region
+1001,Mobile,Electronics,2,15000,North
+1002,Laptop,Electronics,1,55000,South
+1003,T-Shirt,Apparel,3,500,East
+1004,Jeans,Apparel,2,1200,North
+1005,TV,Electronics,1,40000,West
+1006,Shoes,Footwear,4,2000,South
+1007,Watch,Accessories,2,3000,East
+1008,Headphones,Electronics,3,2500,North

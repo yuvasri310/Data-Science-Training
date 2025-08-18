@@ -1,0 +1,86 @@
+use("supplychainDB");
+db.shipments.insertMany([
+  {
+    shipment_id: 101,
+    order_id: 1,
+    status: "in_transit",
+    timestamp: new Date("2025-07-13T10:00:00Z"),
+    location: "bangalore",
+    carrier: "dtdc",
+  },
+  {
+    shipment_id: 102,
+    order_id: 2,
+    status: "delivered",
+    timestamp: new Date("2025-07-14T11:00:00Z"),
+    location: "chennai",
+    carrier: "bluedart",
+  },
+  {
+    shipment_id: 103,
+    order_id: 3,
+    status: "pending",
+    timestamp: new Date("2025-07-15T09:00:00Z"),
+    location: "pune",
+    carrier: "ekart",
+  },
+  {
+    shipment_id: 104,
+    order_id: 4,
+    status: "in_transit",
+    timestamp: new Date("2025-07-16T14:30:00Z"),
+    location: "delhi",
+    carrier: "delhivery",
+  },
+  {
+    shipment_id: 105,
+    order_id: 5,
+    status: "delivered",
+    timestamp: new Date("2025-07-17T16:00:00Z"),
+    location: "hyderabad",
+    carrier: "gati",
+  },
+  {
+    shipment_id: 106,
+    order_id: 6,
+    status: "failed",
+    timestamp: new Date("2025-07-18T17:00:00Z"),
+    location: "mumbai",
+    carrier: "xpressbees",
+  },
+  {
+    shipment_id: 107,
+    order_id: 7,
+    status: "pending",
+    timestamp: new Date("2025-07-18T18:00:00Z"),
+    location: "lucknow",
+    carrier: "shadowfax",
+  },
+  {
+    shipment_id: 108,
+    order_id: 8,
+    status: "delivered",
+    timestamp: new Date("2025-07-19T20:00:00Z"),
+    location: "ahmedabad",
+    carrier: "dtdc",
+  },
+  {
+    shipment_id: 109,
+    order_id: 9,
+    status: "in_transit",
+    timestamp: new Date("2025-07-20T10:30:00Z"),
+    location: "kochi",
+    carrier: "bluedart",
+  },
+  {
+    shipment_id: 110,
+    order_id: 10,
+    status: "cancelled",
+    timestamp: new Date("2025-07-21T12:00:00Z"),
+    location: "trichy",
+    carrier: "ekart",
+  },
+]);
+
+db.shipments.createIndex({ order_id: 1 });
+db.shipments.createIndex({ status: 1 });
