@@ -1,1 +1,39 @@
+1. What is Apache Airflow, and how does it work?
+Apache Airflow is an open-source workflow orchestration tool that helps schedule, monitor, and manage complex data pipelines. It works by defining workflows as DAGs (Directed Acyclic Graphs), where each task represents a step in the pipeline. Airflow uses a scheduler to determine when tasks should run, an executor to distribute work, and a metadata database to track progress. Tasks can be run using Python, Bash, or integrations with external systems.
+
+2. Where does Airflow fit in modern data engineering workflows?
+ETL/ELT pipelines (extracting data from sources, transforming it, and loading into warehouses).
+Batch data processing (running jobs hourly/daily on large datasets).
+Machine learning pipelines (model training, evaluation, deployment).
+Data quality and auditing workflows (ensuring rule compliance before data consumption).
+
+3. How is Airflow different from traditional schedulers or other tools like Prefect or Luigi?
+Compared to cron/traditional schedulers:
+Cron only triggers jobs at fixed times; Airflow manages dependencies, retries, and failure recovery.
+Airflow provides a web UI and monitoring tools, unlike basic cron logs.
+Compared to Luigi:
+Luigi focuses on task dependencies but has limited scheduling and monitoring features.
+Airflow is more extensible with plugins and a larger ecosystem.
+Compared to Prefect:
+Prefect is newer and emphasizes cloud-native execution and simplicity.
+Airflow is more mature, enterprise-ready, and widely adopted in production environments.
+
+4. What are the key components, and how do they interact?
+
+DAGs (Directed Acyclic Graphs): Define the workflow structure (tasks + dependencies).
+Operators: The building blocks of tasks (e.g., PythonOperator, BashOperator, SQL operators).
+Scheduler: Decides when tasks should run based on schedule/conditions.
+Executor: Runs the tasks, either locally or on distributed clusters.
+Metadata Database: Stores states, logs, and history of all DAG runs.
+Web UI: Provides a visual interface for monitoring, debugging, and managing workflows.
+
+Interaction: The DAG defines tasks → Scheduler checks schedule → Executor runs tasks → Database tracks states → Web UI shows results.
+
+5. Based on your learning, where do you see Airflow being useful in real-time enterprise or product scenarios?
+Finance: Automating daily transaction audits and fraud detection pipelines.
+E-commerce: Running hourly data pipelines to update product catalogs, prices, and recommendations.
+Healthcare: Managing sensitive patient data pipelines and compliance checks.
+Telecom & IoT: Orchestrating large-scale log processing and event-driven alerts.
+Machine Learning: Automating retraining and deployment of ML models based on new data.
+
 
