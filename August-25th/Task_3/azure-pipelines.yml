@@ -1,0 +1,27 @@
+trigger:
+  - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: "3.x"
+    displayName: "Set up Python"
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    displayName: "Install dependencies"
+
+  - script: |
+      python sales_data_pipeline.py
+    displayName: "Run sales data processing & upload"
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: "data"
+      ArtifactName: "sales_data_artifacts"
+      publishLocation: "Container"
+    displayName: "Publish raw & processed CSV as artifacts"
