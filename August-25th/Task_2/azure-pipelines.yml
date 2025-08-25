@@ -1,0 +1,27 @@
+trigger:
+  - main # Run pipeline when changes are pushed to main branch
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: "3.x"
+    displayName: "Set up Python"
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    displayName: "Install dependencies"
+
+  - script: |
+      python data_processing.py
+    displayName: "Run data processing script"
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: "data"
+      ArtifactName: "processed_data"
+      publishLocation: "Container"
+    displayName: "Publish raw and cleaned CSV files"
