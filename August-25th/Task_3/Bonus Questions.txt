@@ -1,1 +1,14 @@
+1. Why is storing cleaned data in Azure Blob Storage important for real-time pipelines?
+Cleaned data is like filtered water. Storing it in Blob Storage makes it safe, accessible, and ready for other apps, dashboards, or machine learning models to use. It avoids working with messy/raw data again
+
+2. What’s the difference between pipeline artifacts and Blob Storage uploads?
+Pipeline artifacts → Temporary files created in a pipeline (used mainly inside DevOps pipelines)
+Blob Storage uploads → Long-term storage in the cloud (accessible by any app, service, or user)
+
+3. How would you handle failures in file uploads in a production setup?
+Retry automatically (try again a few times).
+Log errors (record what went wrong).
+Send alerts (email/notification to the team).
+Fallback storage (temporarily store in another location until fixed).
+
 
