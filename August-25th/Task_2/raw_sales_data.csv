@@ -1,0 +1,11 @@
+TransactionID,CustomerName,Product,Quantity,Price,Date
+001,yuvasri,Laptop,1,750,2025-08-01
+002,kavya,Mouse,2,25,08/02/2025
+003,theshitha,Keyboard,,45,2025-08-03
+004,selvi,Monitor,1,150,03-08-2025
+005,,vanitha,3,60,2025/08/04
+006,nikitha,Laptop,1,800,2025-08-05
+007,sharmila,,2,20,2025-08-06
+008,sarvesh,Printer,1,120,6th Aug 2025
+009,priyanka,Monitor,1,155,2025-08-07
+010,sanjay,Keyboard,2,,2025-08-08
