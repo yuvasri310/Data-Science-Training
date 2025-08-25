@@ -1,0 +1,9 @@
+order_id,customer,region,revenue,cost
+101,yuvasri,North,120000,80000
+102,theshitha,West,,30000
+103,kavya,East,60000,40000
+104,vanitha,North,120000,80000
+105,preetha,,45000,25000
+106,mathi,South,,20000
+107,saran,East,90000,50000
+108,raj,West,30000,15000

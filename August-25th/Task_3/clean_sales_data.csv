@@ -1,0 +1,8 @@
+order_id,customer,region,revenue,cost,profit_margin,customer_segment
+101,yuvasri,North,120000.0,80000,0.3333333333333333,Platinum
+102,theshitha,West,0.0,30000,-30000.0,Standard
+103,kavya,East,60000.0,40000,0.3333333333333333,Gold
+105,vanitha,Unknown,45000.0,25000,0.4444444444444444,Standard
+106,preetha,South,0.0,20000,-20.0,Standard
+107,mathi,East,90000.0,50000,0.4444444444444444,Gold
+108,saran,West,30000.0,15000,0.5,Standard
