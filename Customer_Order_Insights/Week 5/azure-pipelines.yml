@@ -1,0 +1,20 @@
+trigger:
+  - main # runs when you push to main branch
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: "3.10"
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install pandas numpy
+      python scripts/week2_analysis.py
+    displayName: "Run Python analysis"
+
+  - script: |
+      echo "Pipeline executed successfully. Check delay_summary.log for details."
+    displayName: "Log success"
