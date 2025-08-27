@@ -1,0 +1,24 @@
+trigger:
+  - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: "3.9"
+
+  - script: |
+      pip install -r requirements.txt
+    displayName: "Install Python dependencies"
+
+  - script: |
+      python run_pipeline.py
+    displayName: "Run Supply Chain Script"
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: "logs"
+      ArtifactName: "logs"
+      publishLocation: "Container"
