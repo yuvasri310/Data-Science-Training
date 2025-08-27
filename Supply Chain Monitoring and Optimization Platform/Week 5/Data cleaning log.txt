@@ -1,0 +1,6 @@
+=== Data Cleaning Log ===
+
+Orders       | missing_values        | 12
+Orders       | duplicates_removed    | 7
+Inventory    | missing_values        | 4
+Inventory    | duplicates_removed    | 2
